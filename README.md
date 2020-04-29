@@ -1,4 +1,4 @@
-## wbl test Panel Plugin for Grafana
+## wbl password generator Panel Plugin for Grafana
 
 Using Docker:
 1. Clone the repository and `cd` to it
