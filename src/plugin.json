@@ -1,0 +1,19 @@
+{
+  "type": "panel",
+  "name": "PasswordGenerator",
+  "id": "eric-passwordgenerator-panel",
+
+  "info": {
+    "description": "Password generator panel for grafana",
+    "author": {
+      "name": "Wubaolong"
+    },
+    "keywords": ["password", "panel"],
+    "version": "1.0.0",
+    "updated": "2020-04-28"
+  },
+  "dependencies": {
+    "grafanaVersion": "5.x.x",
+    "plugins": [ ]
+  }
+}

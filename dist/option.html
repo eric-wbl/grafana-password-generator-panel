@@ -1,0 +1,31 @@
+<div class="editor-row">
+    <div class="section gf-form-group">
+        <h5 class="section-heading">Format</h5>
+        <div class="gf-form">
+            <label class="gf-form-label width-10">Font Size</label>
+            <input type="text" class="input-small gf-form-input width-12" ng-model="ctrl.panel.settings.fontSize" ng-change="ctrl.render()" ng-model-onblur />
+        </div>
+        <div class="gf-form">
+            <label class="gf-form-label width-10">Font Weight</label>
+            <span class="gf-form-select-wrapper max-width-12">
+				<select class="input-small gf-form-input " ng-model="ctrl.panel.settings.fontWeight"
+                        ng-options="t for t in ['normal', 'bold']" ng-change="ctrl.render()"></select>
+			</span>
+        </div>
+    </div>
+
+    <div class="section gf-form-group">
+        <h5 class="section-heading">Rule</h5>
+
+        <div class="gf-form">
+            <label class="gf-form-label width-10">密码位数</label>
+            <input type="text" class="input-small gf-form-input width-12" ng-model="ctrl.panel.rules.len" ng-change="ctrl.render()" ng-model-onblur />
+        </div>
+
+        <gf-form-switch class="gf-form" label="包含大写" label-class="width-8" checked="ctrl.panel.rules.upperCase" on-change="ctrl.render()"></gf-form-switch>
+
+        <gf-form-switch class="gf-form" label="包含小写" label-class="width-8" checked="ctrl.panel.rules.lowerCase" on-change="ctrl.render()"></gf-form-switch>
+
+        <gf-form-switch class="gf-form" label="包含数字" label-class="width-8" checked="ctrl.panel.rules.number" on-change="ctrl.render()"></gf-form-switch>
+    </div>
+</div>
